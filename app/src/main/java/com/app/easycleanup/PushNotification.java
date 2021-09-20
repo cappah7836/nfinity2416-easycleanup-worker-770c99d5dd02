@@ -32,7 +32,7 @@ public class PushNotification extends FirebaseMessagingService {
         super.onMessageReceived(remoteMessage);
         Log.d("recTag", "onMessageReceived: called");
 
-        Log.d("recTag", "onMessageReceived: Received From" +remoteMessage.getFrom());
+        Log.d("recTag", "onMessageReceived: Received From firebase" +remoteMessage.getFrom());
 
         if(remoteMessage.getNotification() != null){
             String title =remoteMessage.getNotification().getTitle();
