@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/rlArea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+android:layout_margin="@dimen/_10sdp"
+        android:background="@drawable/bg_edit_search_text">
+        <Spinner
+            android:id="@+id/spProjects"
+            android:layout_width="match_parent"
+
+            android:layout_height="@dimen/_40sdp"></Spinner>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvLable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/rlArea"
+        android:text="@string/lablePlan"
+        android:textSize="@dimen/_12sdp"
+        style="@style/fontBold"
+        android:textColor="@color/green"
+        android:layout_margin="@dimen/_10sdp"></TextView>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvProjects"
+        android:layout_below="@+id/tvLable"
+        android:layout_margin="@dimen/_5sdp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></androidx.recyclerview.widget.RecyclerView>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_centerInParent="true"
+        android:visibility="gone" ></ProgressBar>
+</RelativeLayout>

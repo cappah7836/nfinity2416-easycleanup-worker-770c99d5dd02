@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <include layout="@layout/content_main" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/back_viewvac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="@dimen/_10sdp"
+        android:contentDescription="TODO"
+        android:src="@drawable/ic_back"/>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_40sdp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/llStartDate"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_300sdp"
+                android:orientation="vertical">
+
+                <CalendarView
+                    android:id="@+id/cvStartDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llEndDate"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_300sdp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <CalendarView
+                    android:id="@+id/cvEndDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <Button
+                    android:id="@+id/btStartDate"
+                    style="@style/fontBold"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_login_button"
+                    android:text="Selecteer Startdatum"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_10sdp"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+
+                <Button
+                    android:id="@+id/btEndDate"
+                    style="@style/fontBold"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_login_button"
+                    android:text="Selecteer einddatum"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_10sdp"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/fontBold"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="Opmerkingen"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15sdp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etRemarks"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:background="@drawable/bg_edit_text"
+                android:gravity="left"
+                android:inputType="textMultiLine"
+                android:padding="@dimen/_5sdp"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/btSend"
+                style="@style/fontBold"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_5sdp"
+                android:layout_weight="0.9"
+                android:background="@drawable/bg_button_next"
+                android:drawableLeft="@drawable/ic_document"
+                android:paddingLeft="@dimen/_90sdp"
+                android:paddingRight="@dimen/_90sdp"
+                android:text="versturen"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_15sdp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

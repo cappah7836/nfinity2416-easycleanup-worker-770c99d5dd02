@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: androidx.loader:loader:1.0.0@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/wrapper/dists/gradle-5.6.4/caches/transforms-2/files-2.1/f828acd14081f5993e8c89a9988ea898/res" />
+      <root url="file://$USER_HOME$/.gradle/wrapper/dists/gradle-5.6.4/caches/transforms-2/files-2.1/23e4be9e44e91b4322b466aa495f5a41/loader-1.0.0/res" />
+      <root url="jar://$USER_HOME$/.gradle/wrapper/dists/gradle-5.6.4/caches/transforms-2/files-2.1/bb8ba50c427150aac288857b5966f34d/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/wrapper/dists/gradle-5.6.4/caches/transforms-2/files-2.1/bb8ba50c427150aac288857b5966f34d/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/wrapper/dists/gradle-5.6.4/caches/transforms-2/files-2.1/bb8ba50c427150aac288857b5966f34d/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/wrapper/dists/gradle-5.6.4/caches/modules-2/files-2.1/androidx.loader/loader/1.0.0/b9ef587f3e46c7fe5b00264989764e43ff45cada/loader-1.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

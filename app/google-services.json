@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "370213683032",
+    "project_id": "easycleanup-worker",
+    "storage_bucket": "easycleanup-worker.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:370213683032:android:429a107b3268c6139f2f2d",
+        "android_client_info": {
+          "package_name": "com.app.easycleanup"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "370213683032-2s7kigjbcsccsn23ia1nudjhdas0lrfq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArWa9nHdYyPu_Tzggv_i8mG7FT4ukja2U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "370213683032-2s7kigjbcsccsn23ia1nudjhdas0lrfq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

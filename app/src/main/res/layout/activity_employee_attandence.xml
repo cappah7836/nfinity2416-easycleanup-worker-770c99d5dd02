@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  >
+    <include layout="@layout/toolbar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:orientation="vertical"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            app:cardCornerRadius="@dimen/_10sdp"
+            android:elevation="@dimen/_10sdp">
+            <ImageView
+                android:id="@+id/ivBackground"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_5sdp"
+                android:background="@color/blue"/>
+            <RelativeLayout
+                android:id="@+id/llMain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_10sdp">
+
+                <TextView
+                    android:id="@+id/tvDate"
+                    style="@style/fontBold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:textStyle="bold"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/green"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:text="@string/data_no_found"/>
+
+                <TextView
+                    android:id="@+id/tvDateIn"
+                    style="@style/font"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:text="@string/date_in" />
+
+                <TextView
+                    android:id="@+id/tvTime"
+                    style="@style/fontBold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_below="@+id/tvDate"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/green"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:text="@string/data_no_found" />
+
+                <TextView
+                    android:id="@+id/tvTimeIn"
+                    style="@style/font"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/tvDateIn"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:text="@string/time_in" />
+                <ImageView
+                    android:id="@+id/checkoutImage"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_height="@dimen/_5sdp"
+android:layout_below="@id/tvTime"
+                    android:background="@color/transparent"></ImageView>
+                <RelativeLayout
+                    android:id="@+id/llMain2"
+                    android:layout_width="match_parent"
+                    android:layout_below="@id/checkoutImage"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <TextView
+                        android:id="@+id/tvDate2"
+                        style="@style/fontBold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:textStyle="bold"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/green"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:text="@string/data_no_found" />
+
+                    <TextView
+                        android:id="@+id/tvDateOut"
+                        style="@style/font"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:text="@string/date_out" />
+
+                    <TextView
+                        android:id="@+id/tvTimeOut"
+                        style="@style/fontBold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:layout_below="@+id/tvDateOut"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/green"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:text="@string/data_no_found" />
+
+                    <TextView
+                        android:id="@+id/tvTime2"
+                        style="@style/font"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/tvDateOut"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:text="@string/time_out" />
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/llMain3"
+                    android:layout_width="match_parent"
+                    android:layout_below="@id/llMain2"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <TextView
+                        android:id="@+id/tvTotal"
+                        style="@style/fontBold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/_15sdp"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/colorDarkBlue"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:text="0" />
+
+                    <TextView
+                        android:id="@+id/tvTotalLable"
+                        style="@style/font"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorDarkBlue"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:text="@string/total_hours" />
+
+
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/btApprove"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/llMain3"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:textColor="@color/white"
+                    style="@style/fontBold"
+                    android:padding="@dimen/_10sdp"
+                    android:background="@drawable/bg_login_button"
+                    android:text="@string/data_no_found"></Button>
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_centerInParent="true"
+        android:visibility="gone" ></ProgressBar>
+</RelativeLayout>

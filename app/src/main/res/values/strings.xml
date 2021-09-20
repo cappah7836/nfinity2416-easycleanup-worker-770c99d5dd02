@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">EASY CLEAN UP PERSONNEL</string>
+
+    <string name="next">Next</string>
+    <string name="TextNext">Next</string>
+    <string name="description">Tasks</string>
+    <string name="statuscheck">Status</string>
+    <string name="check_in">CHECK IN</string>
+    <string name="check_out">UITCHECKEN</string>
+    <string name="email">E-mail</string>
+    <string name="password">Wachtwoord</string>
+    <string name="error_email">Oeps, je bent vergeten je e-mailadres in te voeren.</string>
+    <string name="error_password">Oeps, je bent vergeten je wachtwoord in te voeren.</string>
+    <string name="alert_information">Alert!</string>
+    <string name="alert_internet_connection">Oeps, je verbinding is verbroken</string>
+    <string name="alert_api_not_found">Kan gegevens van server niet ophalen</string>
+    <string name="alert_internal_server_error">Server reageert niet</string>
+    <string name="alert_request_timeout">Time-out aanvragen, probeer het opnieuw!</string>
+    <string name="error_user_not_exist">Oopos uw gebruiker niet geautoriseerd</string>
+    <string name="data_not_found">Data niet gevonden</string>
+    <string name="ok">OK</string>
+    <string name="success">Succes</string>
+    <string name="alert">ALERT!</string>
+
+    <string name="submit">Verzenden</string>
+    <string name="leave_message">Succes, laat verzonden</string>
+    <string name="type">Type</string>
+
+    <string name="error_remarks">Oeps je bent vergeten opmerkingen in te vullen</string>
+    <string name="error_startDate">Oeps, je bent vergeten vanaf datum toe te voegen</string>
+    <string name="error_endDate">Oeps, je bent vergeten toe te voegen aan de datum</string>
+
+    <string name="planninghisotry">PLANNING GESCHIEDENIS</string>
+    <string name="planning">Planning</string>
+    <string name="sign_in">AANMELDEN</string>
+    <string name="title_location_permission">Locatie toestemming</string>
+    <string name="text_location_permission">Geef Easy Clean Up toegang tot uw locatie</string>
+    <string name="action_settings">Instellingen</string>
+    <string name="search">Zoek op projectnaam</string>
+    <string name="tvPlanning">Planningsdetails</string>
+    <string name="task_started">Succesvol ingecheckt</string>
+    <string name="lablePlan">Selecteer plan om werknemerslijst te krijgen</string>
+    <string name="searchEmployee">Zoek werknemer op naam</string>
+    <string name="data_no_found">DATA NIET GEVONDEN</string>
+    <string name="time_out">TIJD OUT</string>
+    <string name="date_out">DATUM UIT</string>
+    <string name="time_in">TIJD IN</string>
+    <string name="date_in">DATUM IN</string>
+    <string name="checkin_error_date">U mag niet inchecken op de vorige datum</string>
+    <string name="checkout_error_date">U mag niet uitchecken op de vorige datum</string>
+    <string name="checkout_already">Je checkt al uit</string>
+    <string name="check_in_first">Je hebt nog niet eerder ingecheckt</string>
+    <string name="task_end">Succesvol uitgecheckt</string>
+    <string name="total_hours">TOTALE TIJD</string>
+    <string name="invalid_user">Ongeldige gebruiker Probeer het met de login van de werknemer</string>
+
+    <string name="notapproved">IN AFWACHTING</string>
+    <string name="approve">GOEDGEKEURD</string>
+    <string name="decline">GEANNULEERD</string>
+    <string name="sick_leave">Ziekteverlof</string>
+    <string name="date"> Datum </string>
+    <string name="holIDAY_LEAVE">Vakantieverlof</string>
+    <string name="from_date">Van datum:</string>
+    <string name="to_date">Daten:</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

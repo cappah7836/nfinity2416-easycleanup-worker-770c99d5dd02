@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.DashboardFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_projects"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_90sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:elevation="@dimen/_15sdp"
+            app:cardCornerRadius="@dimen/_10sdp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_weekly_job">
+
+                <ImageView
+                    android:id="@+id/iv_project"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:background="@drawable/ic_project_view"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_project"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="@font/lato_regular"
+                    android:text="Dagelijkse projecten"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp" />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_sick_leave"
+            android:layout_width="@dimen/_110sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_below="@id/cv_projects"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:elevation="@dimen/_10sdp"
+            app:cardCornerRadius="@dimen/_10sdp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_daily_jobs">
+
+                <ImageView
+                    android:id="@+id/iv_leave"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:background="@drawable/ic_leaves"
+                    android:paddingBottom="@dimen/_10sdp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_leave"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="@font/lato_regular"
+                    android:text="Ziekteverzuim"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp" />
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_vacation_leave"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_below="@id/cv_projects"
+            android:layout_marginLeft="@dimen/_130sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:elevation="@dimen/_10sdp"
+            app:cardCornerRadius="@dimen/_10sdp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_mark_attendance">
+
+                <ImageView
+                    android:id="@+id/ivWeeklyJob"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:background="@drawable/ic_document"
+                     />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ivWeeklyJob"
+                    android:layout_centerInParent="true"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/lato_regular"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Vakantieverlof"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12sdp" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_appliedleaves"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_90sdp"
+            android:layout_below="@id/cv_vacation_leave"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+
+            android:layout_marginRight="@dimen/_10sdp"
+            android:elevation="@dimen/_15sdp"
+            app:cardCornerRadius="@dimen/_10sdp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_button_next">
+
+                <ImageView
+                    android:id="@+id/iv_leave2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:background="@drawable/ic_check2"
+                    android:paddingBottom="@dimen/_10sdp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_leave2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="@font/lato_regular"
+                    android:text="Toegepaste bladeren"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp" />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+    </RelativeLayout>
+
+</FrameLayout>

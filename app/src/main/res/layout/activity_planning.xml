@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <include layout="@layout/toolbar" />
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="@dimen/_50sdp"/>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_record"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/map"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/_5sdp"
+        android:layout_margin="@dimen/_5sdp"
+        app:cardCornerRadius="@dimen/_10sdp"
+        >
+
+        <RelativeLayout
+            android:id="@+id/heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_20sdp">
+
+            <TextView
+                android:id="@+id/tvProjectName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@id/tvPhoneNumber"
+                style="@style/font"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvPhoneNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="right"
+                style="@style/fontBold"
+                android:textColor="@color/colorDarkBlue"
+                android:text=""
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/font"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_below="@id/tvProjectName"
+                android:visibility="visible"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/tvDepartment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/font"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_below="@id/tvAddress"
+                android:visibility="visible"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/tvCustomer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/font"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_below="@id/tvDepartment"
+                android:visibility="visible"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/tvCity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/font"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_below="@id/tvCustomer"
+                android:visibility="visible"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+    <RelativeLayout
+        android:id="@+id/llMain3"
+        android:layout_width="match_parent"
+        android:layout_below="@id/cv_record"
+
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/tvTotal"
+            style="@style/fontBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:textStyle="bold"
+            android:textSize="@dimen/_15sdp"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/colorDarkBlue"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/tvTotalLable"
+            style="@style/font"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:textStyle="bold"
+            android:textColor="@color/colorDarkBlue"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:text="@string/total_hours" />
+
+
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/llMain4"
+        android:layout_width="match_parent"
+        android:layout_below="@id/llMain3"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tvTotaltime"
+            style="@style/fontBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:textStyle="bold"
+            android:textSize="@dimen/_15sdp"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/colorDarkBlue"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/tvTotalLabletime"
+            style="@style/font"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:textStyle="bold"
+            android:textColor="@color/colorDarkBlue"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:text="Totale Tijd Besteed" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llMain4"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.omega_r.libs.OmegaCenterIconButton
+            android:id="@+id/btStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_bg"
+            android:paddingLeft="@dimen/_20sdp"
+            style="@style/font"
+            android:paddingRight="@dimen/_20sdp"
+            android:text="@string/check_in"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            />
+
+        <com.omega_r.libs.OmegaCenterIconButton
+            android:id="@+id/btEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:background="@drawable/btn_bg"
+            style="@style/font"
+            android:paddingLeft="@dimen/_20sdp"
+            android:paddingRight="@dimen/_20sdp"
+            android:text="@string/check_out"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            />
+    </LinearLayout>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

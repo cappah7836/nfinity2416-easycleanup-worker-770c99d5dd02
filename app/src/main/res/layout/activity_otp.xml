@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activities.OtpAC">
+    <LinearLayout
+        android:id="@+id/la"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_200sdp"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal" />
+    <LinearLayout
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/goback2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:src="@drawable/ic_back" />
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Verificatie"
+
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ImageView
+            android:id="@+id/logoImg"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/otp"/>
+
+        <TextView
+            android:id="@+id/tv_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_below="@id/logoImg"
+            android:fontFamily="@font/lato_black"
+            android:text="Verificatie code"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/_15sdp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_below="@+id/tv_text"
+            android:text="Typ de verificatiecode die is verzonden naar"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_emailuser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_below="@id/tv"
+            android:text="email"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/_12sdp" />
+
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <ProgressBar
+            android:id="@+id/progressBarotp"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <in.aabhasjindal.otptextview.OtpTextView
+        android:id="@+id/otp_view"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_300sdp"
+        app:height="@dimen/_40sdp"
+        app:width="@dimen/_40sdp"
+        app:bar_enabled="true"
+        app:bar_height="@dimen/_3sdp"
+        app:bar_success_color="@color/green"
+        app:bar_error_color="@color/red"
+        app:box_margin="0dp"
+        app:length="4"
+        app:otp_text_size="@dimen/_24sdp"/>
+
+
+
+    <Button
+        android:id="@+id/btn_verify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/otp_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:background="@drawable/bg_login_button"
+        android:fontFamily="@font/lato_regular"
+        android:padding="@dimen/_5sdp"
+        android:text="Verifiëren"
+        android:textAllCaps="false"
+        android:textColor="#fefefe"
+        android:textSize="@dimen/_14sdp" />
+
+    <TextView
+        android:id="@+id/tt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:visibility="gone"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_below="@id/btn_verify"
+        android:text="Email opnieuw verzenden"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/_12sdp" />
+
+
+
+</RelativeLayout>

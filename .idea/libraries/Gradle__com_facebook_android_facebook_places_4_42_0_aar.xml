@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="Gradle: com.facebook.android:facebook-places:4.42.0@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/wrapper/dists/gradle-5.6.4/caches/transforms-2/files-2.1/5ad206adaa92ba0d20641d1851bf553a/res" />
+      <root url="file://$USER_HOME$/.gradle/wrapper/dists/gradle-5.6.4/caches/transforms-2/files-2.1/2a5d158392e9d79e4a6ba15c55806a72/jetified-facebook-places-4.42.0/res" />
+      <root url="jar://$USER_HOME$/.gradle/wrapper/dists/gradle-5.6.4/caches/transforms-2/files-2.1/dddec6837c350a48f6960c2d597d4055/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/wrapper/dists/gradle-5.6.4/caches/transforms-2/files-2.1/dddec6837c350a48f6960c2d597d4055/res" />
+      <root url="file://$USER_HOME$/.gradle/wrapper/dists/gradle-5.6.4/caches/transforms-2/files-2.1/dddec6837c350a48f6960c2d597d4055/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/wrapper/dists/gradle-5.6.4/caches/modules-2/files-2.1/com.facebook.android/facebook-places/4.42.0/7503d0c10757ebc1df31db069ff749e45c909acf/facebook-places-4.42.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/wrapper/dists/gradle-5.6.4/caches/modules-2/files-2.1/com.facebook.android/facebook-places/4.42.0/4636a3197c6548739fe9ee3f1dd37c489203094c/facebook-places-4.42.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

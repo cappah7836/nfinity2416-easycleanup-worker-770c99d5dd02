@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2D096F</color>
+    <color name="colorPrimaryDark">#3B0B8F</color>
+    <color name="colorAccent">#58c7a7</color>
+    <color name="white">#ffffff</color>
+    <color name="whiteOpacity">#994a91db</color>
+    <color name="boarder">#D2CECE</color>
+    <color name="blue">#4074F4</color>
+    <color name="transparentblue">#1A4074F4</color>
+    <color name="red">#F34A38</color>
+    <color name="red2">#F37D70</color>
+    <color name="transparentred">#1AF34A38</color>
+    <color name="black">#000000</color>
+    <color name="orange">#FFC107</color>
+    <color name="drawerbg">#0A4168</color>
+    <color name="drawertext">#7B9CB3</color>
+    <color name="dividerColor">#16D6D6D6</color>
+    <color name="purplelight">#8C6BCE</color>
+    <color name="green">#4b8b3b</color>
+    <color name="darkGreen">#45A049</color>
+    <color name="colorEditStatus">#9a59c7</color>
+    <color name="colorMyGroupsStatus">#58c7a7</color>
+    <color name="colorDashBoardStatus">#f48344</color>
+    <color name="colorBannedStatus">#17778f</color>
+    <color name="colorInviteStatus">#891c79</color>
+    <color name="colorMessageBg">#a14cc0</color>
+    <color name="colorplaygroupStatus">#166e82</color>
+    <color name="colorstartgroupstatus">#c33288</color>
+
+    <color name="colorPinDivider">#d8d8d8</color>
+    <color name="bggray">#f9f9f9</color>
+    <color name="barColor">#E4E4E4</color>
+    <color name="colorOnline">#01a65a</color>
+    <color name="colorOffline">#D0021B</color>
+    <color name="colorSearchText">#8e8e93</color>
+    <color name="txtlightgray">#6b6b6b</color>
+    <!-- App Colors -->
+    <color name="colortransparent">#00000000</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorSoftBlue">#1E66BB</color>
+    <color name="colorAquaBlue">#00c1de</color>
+    <color name="colorGreyBlue">#617283</color>
+    <color name="colorLightGrey">#f7f8f8</color>
+    <color name="colorCoolGrey">#a5adba</color>
+    <color name="colorGunMetal">#3e4b57</color>
+    <color name="colorCharcoalGrey">#393c41</color>
+    <color name="colorProgressFill">#0a62a3</color>
+    <color name="colorSeprationLine">#dbdbdb</color>
+    <color name="colorDarkBlue">#1862A6</color>
+
+    <color name="colorRecLessColor">#4a4a4a</color>
+    <color name="colorLtGrey">#88D3D3D3</color>
+    <color name="colorDisable">#808080</color>
+    <color name="colorToolBar">#4a91db</color>
+
+
+    <color name="colorExpandListItem">#18465c</color>
+
+    <color name="error_bg_color">#df1a56</color>
+    <color name="success_bg_color">#0dba23</color>
+    <color name="information_bg_color">#00bfff</color>
+    <color name="noColor">#FEDA21</color>
+
+    <color name="colorDivider">#e4e7ec</color>
+    <color name="colorProductInfo">#003a5d</color>
+    <color name="colorProductImageOutline">#f4f4f4</color>
+
+    <color name="lightGrey">#FFCAC9C9</color>
+    <color name="darkGrey">#FF969393</color>
+
+    <color name="custom_progress_background">#ff3c3a3b</color>
+    <color name="custom_progress_orange_progress">#ffff8800</color>
+    <color name="custom_progress_orange_progress_half">#7fff8800</color>
+
+    <color name="colorDarkBlueText">#105080</color>
+    <color name="colorCalenderBackground">#EBECF0</color>
+    <color name="colorLightGray">#f8f8f8</color>
+    <color name="colorSearchBackground">#F7F8F8</color>
+
+    <color name="colorLine">#4a91db</color>
+    <color name="colorAxis">#748595</color>
+    <color name="colorLable">#999ca7</color>
+    <color name="colorEditText">#202020</color>
+
+
+    <color name="colorTableOutline">#99A0AB</color>
+    <color name="colorFAFA">#FAFAFA</color>
+    <color name="colorTextColorChecks">#000B1C</color>
+
+    <color name="colorAxisTableDisableFill">#EBECF0</color>
+    <color name="colorAxisTableSelectedFill">#0A62A3</color>
+    <color name="colorAxisTableNormalFill">#FFFFFF</color>
+    <color name="colorTableTextSel">#ECECEC</color>
+    <color name="colorTableTextDis">#ECECEC</color>
+    <color name="colorTrasparent">#88ffffff</color>
+
+    <color name="colorfirst">#ea2626</color>
+    <color name="colortooltip">#fec91b</color>
+    <color name="colorsecond">#0e1ca9</color>
+    <color name="colorthird">#fe7501</color>
+</resources>

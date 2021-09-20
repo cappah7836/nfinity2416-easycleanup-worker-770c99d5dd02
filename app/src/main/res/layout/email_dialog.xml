@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_margin="@dimen/_10sdp"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/_10sdp"
+        android:text="Update Je E-mail"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/_15sdp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/new_email"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_margin="@dimen/_10sdp"
+        android:background="@drawable/password_shape"
+        android:hint="Nieuw email adres"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="@dimen/_10sdp"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title" />
+
+
+
+
+    <TextView
+        android:id="@+id/update"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_margin="@dimen/_10sdp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="Update"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/new_email" />
+
+    <TextView
+        android:id="@+id/cancel_action"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_margin="@dimen/_10sdp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="Annuleren"
+        android:textAllCaps="false"
+        android:textColor="@color/red"
+        app:layout_constraintBottom_toBottomOf="@id/update"
+        app:layout_constraintEnd_toStartOf="@id/update"
+        app:layout_constraintTop_toTopOf="@id/update" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

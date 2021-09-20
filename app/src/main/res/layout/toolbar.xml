@@ -1,0 +1,30 @@
+<RelativeLayout android:id="@+id/rl_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_50sdp"
+    android:layout_alignParentTop="true"
+    android:background="@color/colorPrimary"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Button
+        android:id="@+id/bt_back"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:background="@drawable/ic_back" />
+
+    <TextView
+        android:id="@+id/tvLable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_toRightOf="@+id/bt_back"
+        android:fontFamily="@font/lato_regular"
+        android:text="@string/tvPlanning"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_18sdp" />
+
+
+
+</RelativeLayout>

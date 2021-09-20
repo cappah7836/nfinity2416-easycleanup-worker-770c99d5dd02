@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageButton
+        android:id="@+id/btDown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/_5sdp"
+        android:background="@color/transparent"
+        android:padding="@dimen/_16sdp"
+        android:src="@drawable/ic_arrow_down"
+        android:tint="@color/black" />
+
+    <LinearLayout
+        android:id="@+id/ll_titiles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp">
+
+        <TextView
+            style="@style/font"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5sdp"
+            android:text="Weeknummer"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            style="@style/font"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_30sdp"
+            android:padding="@dimen/_5sdp"
+            android:text="Naam van het project"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            style="@style/font"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_40sdp"
+            android:padding="@dimen/_5sdp"
+            android:text="Adres"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            style="@style/font"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_40sdp"
+            android:padding="@dimen/_5sdp"
+            android:text="Naam werknemer"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/week_no_lable"
+            style="@style/font"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_40sdp"
+            android:padding="@dimen/_5sdp"
+            android:text="Uren in totaal"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view"
+        android:layout_toRightOf="@+id/ll_titiles"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp">
+
+        <TextView
+            android:id="@+id/tvProjectid"
+            style="@style/font"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:padding="@dimen/_5sdp"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp" />
+
+        <TextView
+            android:id="@+id/tvProject"
+            style="@style/font"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_30sdp"
+            android:padding="@dimen/_5sdp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp" />
+
+        <TextView
+            android:id="@+id/tvLocation"
+            style="@style/font"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_40sdp"
+            android:padding="@dimen/_5sdp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp" />
+
+        <TextView
+            android:id="@+id/tvcustomer"
+            style="@style/font"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_40sdp"
+            android:padding="@dimen/_5sdp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp" />
+
+
+
+        <TextView
+            android:id="@+id/week_no"
+            style="@style/font"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_40sdp"
+            android:padding="@dimen/_5sdp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llWeeks"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_below="@+id/ll_titiles"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:weightSum="7">
+
+        <TextView
+            android:id="@+id/tvMon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/check_selectore"
+            android:drawablePadding="@dimen/_10sdp"
+            android:gravity="center_horizontal"
+            android:text="MON" />
+
+        <TextView
+            android:id="@+id/tvTue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/check_selectore"
+
+            android:drawablePadding="@dimen/_10sdp"
+            android:gravity="center_horizontal"
+            android:text="TUE" />
+
+        <TextView
+            android:id="@+id/tvWed"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/check_selectore"
+            android:drawablePadding="@dimen/_10sdp"
+            android:gravity="center_horizontal"
+            android:text="WED" />
+
+        <TextView
+            android:id="@+id/tvThu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/check_selectore"
+            android:drawablePadding="@dimen/_10sdp"
+            android:gravity="center_horizontal"
+            android:text="THU" />
+
+        <TextView
+            android:id="@+id/tvFri"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/check_selectore"
+            android:drawablePadding="@dimen/_10sdp"
+            android:gravity="center_horizontal"
+            android:text="FRI" />
+
+        <TextView
+            android:id="@+id/tvSat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/check_selectore"
+            android:drawablePadding="@dimen/_10sdp"
+            android:gravity="center_horizontal"
+            android:text="SAT" />
+
+        <TextView
+            android:id="@+id/tvSun"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/check_selectore"
+            android:drawablePadding="@dimen/_10sdp"
+            android:gravity="center_horizontal"
+            android:text="SUN" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/font"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_16sdp"
+        android:text="Project Details"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14sdp"
+        android:textStyle="bold" />
+
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_below="@+id/title"
+        android:background="@color/colorPrimary" />
+
+    <View
+        android:id="@+id/view_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_below="@+id/llWeeks"
+        android:background="@color/colorPrimary" />
+
+</RelativeLayout>
