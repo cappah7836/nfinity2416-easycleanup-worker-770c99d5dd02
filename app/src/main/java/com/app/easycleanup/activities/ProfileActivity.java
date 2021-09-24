@@ -38,6 +38,7 @@ import com.app.easycleanup.network.ReminderBroadcast;
 import com.app.easycleanup.utils.ApplicationUtils;
 import com.app.easycleanup.utils.CustomResponseDialog;
 import com.app.easycleanup.utils.SharedPreference;
+import com.google.firebase.messaging.FirebaseMessaging;
 
 import java.io.IOException;
 import java.net.SocketTimeoutException;
@@ -55,7 +56,7 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
     String empId, emailAddress, mobileNo;
     TextView UserName, UserEmail, ChangePassword;
     LinearLayout linearName, linearEmail;
-
+    private static final String TAG ="FCM" ;
 
     ProgressBar progressBar;
 
@@ -66,7 +67,17 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
         mContext = this;
         setContentView(R.layout.activity_profile);
 
-
+        FirebaseMessaging.getInstance().getToken().addOnSuccessListener(token -> {
+            if (!TextUtils.isEmpty(token)) {
+                Log.d(TAG, "retrieve token successful : " + token);
+            } else{
+                Log.w(TAG, "token should not be null...");
+            }
+        }).addOnFailureListener(e -> {
+            //handle e
+        }).addOnCanceledListener(() -> {
+            //handle cancel
+        }).addOnCompleteListener(task -> Log.v(TAG, "This is the token : " + task.getResult()));
 
 
         Window window = mContext.getWindow();

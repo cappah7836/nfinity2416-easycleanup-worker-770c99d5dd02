@@ -17,6 +17,7 @@ import android.location.Geocoder;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.view.Window;
@@ -27,6 +28,7 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.TimePicker;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
@@ -50,6 +52,12 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.CircleOptions;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.iid.FirebaseInstanceIdReceiver;
+import com.google.firebase.iid.internal.FirebaseInstanceIdInternal;
+import com.google.firebase.installations.FirebaseInstallations;
+import com.google.firebase.messaging.FirebaseMessaging;
 
 
 import java.io.IOException;
@@ -68,6 +76,7 @@ import retrofit2.Callback;
 ;
 
 public class EmployeePlaningActivity extends AppCompatActivity implements OnMapReadyCallback, View.OnClickListener {
+
     ////////////////////////////////////////////
     private int seconds;
     private boolean running;
@@ -99,7 +108,7 @@ public class EmployeePlaningActivity extends AppCompatActivity implements OnMapR
     String currentDate;
     Boolean didCheckIn, didCheckOut;
     SimpleDateFormat simpleDateFormat;
-
+    String token;
     Date currentTime, currentTime2;
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
